@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Únete a nuestro equipo!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="container" id="mainForm">
+            <div class="info-section">
+                <div class="icon">🏃‍♂️</div>
+                <h1>¡Únete a nuestro equipo!</h1>
+                <p class="subtitle">Descubre las mejores ofertas en ropa deportiva y recibe promociones exclusivas directamente en tu correo.</p>
+                
+                <ul class="benefits">
+                    <li>Descuentos exclusivos para miembros</li>
+                    <li>Acceso anticipado a nuevas colecciones</li>
+                    <li>Envío gratis en tu primera compra</li>
+                    <li>Contenido personalizado según tus intereses</li>
+                </ul>
+            </div>
+
+            <div class="form-section">
+                <div class="promo">🎉 <strong>¡10% de descuento en tu primera compra!</strong></div>
+
+                <form id="subscriptionForm" novalidate>
+                    <div class="field">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+                        <small class="error" data-for="email"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="name">Nombre <span class="required">*</span></label>
+                        <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+                        <small class="error" data-for="name"></small>
+                    </div>
+
+                    <fieldset class="interests">
+                        <legend>¿Qué te interesa? (opcional)</legend>
+                        <label><input type="checkbox" name="interests" value="Calzado deportivo"> Calzado deportivo</label>
+                        <label><input type="checkbox" name="interests" value="Ropa para hombre"> Ropa para hombre</label>
+                        <label><input type="checkbox" name="interests" value="Ropa para mujer"> Ropa para mujer</label>
+                        <label><input type="checkbox" name="interests" value="Accesorios"> Accesorios</label>
+                    </fieldset>
+
+                    <div class="field checkbox-field">
+                        <label>
+                            <input id="privacy" name="privacy" type="checkbox" required>
+                            Acepto la <a href="#" target="_blank">política de privacidad</a> y deseo recibir promociones <span class="required">*</span>
+                        </label>
+                        <small class="error" data-for="privacy"></small>
+                    </div>
+
+                    <button class="submit-btn" type="submit">Suscribirme ahora</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="validate.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
